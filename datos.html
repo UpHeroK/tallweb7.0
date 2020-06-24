@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Datos Usuario</title>
+    </head>
+    <body>
+        <h1>Rellena tu CV</h1>
+        <form action="DatosUsuario.html">
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre" ><br>
+            <label for="apellidos">Apellidos:</label><br>
+            <input type="text" id="apellidos" name="apellidos" size="40"><br>
+            <label for="contraseña">Contraseña:</label><br>
+            <input type="password" id="contraseña" name="contraseña" ><br>
+            <label for="confirmarcontra">Confirmar contraseña:</label><br>
+            <input type="password" id="confirmarcontra" name="confirmarcontra" ><br>
+            <label for="identificacion">Identificacion:</label><br>
+            <select id="identificacion" name="identificacion">
+                <option value="ti">T.I</option>
+                <option value="cc">C.C</option>
+                <option value="otro">OTRO</option>
+           </select><input type="text"><br>
+           <label for="sexo">Sexo:</label><br>
+           <input type="radio" id="hombre" name="sexo" value="hombre">Hombre<br>
+           <input type="radio" id="mujer" name="sexo" value="mujer">Mujer<br>
+           <label for="foto">Incluir mi foto:</label><br>
+           <input type="file" id="mifoto" name="mifoto"><br>
+           <input type="checkbox" id="estudiante" name="estudiante" value="estudiante">
+           <label for="estudiante">Estudiante</label><br>
+           <fieldset>
+               <legend>Datos personales</legend>
+               <label for="departamento">Departamento:</label><br>
+               <select id="departamento" name="departamento">
+                   <option value="Santander">Santander</option>
+                   <option value="Bogota">Bogota</option>
+                   <option value="Antioquia">Antioquia</option>
+                   <option value="--Seleccionar--">--Seleccionar--</option>
+               </select><br>
+               <label for="fcumpleaños">Fecha de cumpleaños:</label><br>
+               <input type="date" id="birthday" name="birthday"><br>
+               <label for="temadeinteres">Temas de interes:</label><br>
+               <textarea name="temasdeinteres" rows="15" cols="35"></textarea><br>
+           </fieldset>
+           <input type="submit" value="Guardar cambios"><input type="reset">
+        </form>
+    </body>
+</html>
